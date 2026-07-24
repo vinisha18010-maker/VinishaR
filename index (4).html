@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 id="output"></h2>
+
+    <script>
+      const output = document.getElementById("output");
+      let result = "";
+
+      for (let i = 10; i >= 1; i--) {
+        if (i == 4) {
+          result += "welcome<br>";
+        } else {
+          result += i + "<br>";
+        }
+      }
+
+      output.innerHTML = result;
+    </script>
+  </body>
+</html>
